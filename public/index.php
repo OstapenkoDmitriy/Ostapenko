@@ -1,2 +1,5 @@
 <?php
-echo "hello World and my friends";
+$a = 1;
+$b = 2;
+echo $a + $b;
+
