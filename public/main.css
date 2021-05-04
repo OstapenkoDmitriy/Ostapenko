@@ -1,4 +1,12 @@
 li {
 list-style-type: none;
 float: left;
+margin-left:20px;
+}
+.menu {
+max-width: 1080px;
+margin: 0 auto;
+}
+nav {
+width: auto;
 }
