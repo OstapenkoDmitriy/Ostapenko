@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
  <link rel="stylesheet" href="main.css">
+<script src="script.js"></script>
  <meta charset="utf-8">
  <meta name="description" content="Мой личный сайт, где я веду свой блог" >
  <meta name="autor" content="Дмитрий Остапенко">
@@ -13,19 +14,32 @@
 <body>
   <header>
     <div class="menu">
- <nav> <ul>
-  <li><a href="index.html">Главная</a></li>
-  <li><a href="my_projects.html">Мои проекты</a></li>
-  <li><a href="content.html">Контент</a></li>
-  <li><a href="club_nl.html">Клуб New Lifestyle</a></li>
-  <li><a href="master_mind.html">Master Mind</a></li>
-  <li><a href="game_life_capital.html">Игра Жизненный Капитал</a></li>
-  <li><a href="coaching_1on1.html">Коучинг 1 на1</a></li>
-  <li><a href="invite_to_speach.html">Пригласить спикером</a></li>
-  <li><a href="contacts.html">Контакты</a></li></ul></nav><br>
-</div>
+      <nav>
+        <ul class="topmenu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="my_projects.html">Мои проекты</a></li>
+        <li><a href="content.html" class="down">Контент</a>
+          <ul class="submenu">
+            <li><a href="vlog.html">Видео</a></li>
+              <li><a href="mystory.html">Моя история</a></li>
+            <li><a href="textblog.html">Блог</a></li>
+          </ul>
+        </li>
+        <li><a href="newlifestyle.html" class="down">New Lifestyle</a>
+          <ul class="submenu">
+            <li><a href="club_nl.html">Закрытый клуб</a></li>
+            <li><a href="game_life_capital.html">Настольные игры</a></li>
+            <li><a href="master_mind.html">Master Mind</a></li>
+            <li><a href="coaching_1on1.html">Коучинг 1 на 1</a></li>
+            <li><a href="networking.html">Networking</a></li>
+          </ul>
+        </li>
+        <li><a href="invite_to_speach.html">Пригласить спикером</a></li>
+        <li><a href="contacts.html">Контакты</a></li><br>
+      </ul>
+      </nav>
+</div><br>
 <h1>Контент решает</h1>
-<h2>Видео</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xW8LqEegcs4"
 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xcJW5vNZjuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -37,7 +51,23 @@ encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QcnDmN9OFCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2bpAehSDiGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+<h1>Рубрикатор Контента</h1>
+
+<div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <ul class="menu__box">
+    <li><a class="menu__item" href="#">Главная</a></li>
+    <li><a class="menu__item" href="#">Проекты</a></li>
+    <li><a class="menu__item" href="#">Команда</a></li>
+    <li><a class="menu__item" href="#">Блог</a></li>
+    <li><a class="menu__item" href="#">Контакты</a></li>
+  </ul><br>
+
+</div>
 <h2>Блог</h2>
 <h3>Личностный рост</h3>
 <h3>Системные решение</h3>
@@ -54,13 +84,14 @@ encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h3>Здоровье</h3>
 <h3>Инструменты</h3>
 <h3>Советую</h3><br>
-<a href="blog/mystory/mystory.html">Моя история</a>
 
-<p>
+
+  <h1>1-я запись в блог</h1>
+  <p>
+<img class="leftimg"src="blog/1/1.jpg" width = "500" height="500" alt="Мэм Хакер"><br>
 Hello World! Так It-шники обычно пишут в своей первой публичной записи в сети. Я не исключение. И хочть до It-шника мне еще очень и очень далеко, я решил так же начать первую запись. <br>
 Ведь это мой первый блог, который я буду вести ручками, используя html и css, а не конструкторы и CMS системы. Должен признаться, что ощущение очень крутое, потому что ты создаешь <br>
 что-то в редакторе кода и чувствуешь себя как на этой картинке <br>
-<img src="blog/1/1.jpg" width = "500" height="500" alt="Мэм Хакер"><br>
 Лично меня этот мэм очень веселит. Раньше я думал что верстка это что-то очень сложное, но на практике хватило нескольких часов, чтобы начать делать самые примитивные страницы. <br>
 <p>
 Думаю будет логично ответить на вопрос - Зачем в 2021 году начинать вести текстовый блог на сайте? Молодежь протестова против того, чтобы Тик Ток публиковал видео длинее 15 секунд. <br>
@@ -79,7 +110,6 @@ Hello World! Так It-шники обычно пишут в своей перв
 Так же и мне хочется научиться делать такие системные вещи. И тестовый блог, возможно, станет для меня одним из таких системых решений.<br>
 Потому что если ты написал хороший и полезный текст, правильно его оптимизировал для поисковых роботов, то можешь постоянно получать новых посетителей на свой ресурс. <br>
 <a href="blog/1/1blog.html">Читать полностью</a>.<br>
-
 
 </p>
 
