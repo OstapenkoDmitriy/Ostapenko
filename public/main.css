@@ -1,10 +1,29 @@
+
 p {
   font-size: 25px;
-    line-height: 2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 2;
+  text-indent: 30px;
+  padding-left: 30px;
 }
 h1 {
   text-align: center}
+h2  {
+  text-align: center;
 
+  padding-bottom: 1px;
+}
+h3  {
+  padding-left: 30px;
+}
+a {
+  color: green;
+}
+.round {
+      border-radius: 100px; /* Радиус скругления */
+      border: 5px solid green; /* Параметры рамки */
+      box-shadow: 0 0 7px #666; /* Параметры тени */
+     }
 
 .leftimg {
     float:left;
@@ -16,12 +35,12 @@ h1 {
    }
 
 li {
-float: left;
+float: center;
 margin-left:20px;
 }
 .menu {
 max-width: 1920px;
-margin: 0 auto;
+margin: 10px auto;
 text-align: center
 }
 nav {
@@ -29,14 +48,16 @@ width: auto;
 text-align: center
 }
 body {
-    font-family: Arial;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px;
-    background: #f1f1f1;
+    padding-top: 0px;
+    background: white;
+    margin: 0px;
+    background-size: 10px 10px;
 }
 
-/* Header/Blog Title */
 .header {
-    padding: 30px;
+    padding: 40px;
     font-size: 40px;
     text-align: center;
     background: white;
@@ -56,7 +77,18 @@ body {
     padding-left: 20px;
 }
 
-/* Fake image */
+table {
+    width: 100%; /* Ширина таблицы */
+    background: white; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 2px; /* Расстояние между ячейками */
+   }
+   td, th {
+    background: #DBEBCE;
+    padding: 5px;
+    color: blue;
+   }
+
 .fakeimg {
     background-color: #aaa;
     width: 100%;
@@ -81,15 +113,10 @@ body {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
     margin-top: 20px;
 }
 * { box-sizing: border-box; }
-body {
-  margin: 0;
 
-  background-size: 10px 10px;
-}
 nav ul {
   list-style: none;
   margin: 0;
@@ -99,7 +126,7 @@ nav a {
   display: block;
   text-decoration: none;
   outline: none;
-  transition: .4s ease-in-out;
+  transition: .0s ease-in-out;
 }
 .topmenu {
   backface-visibility: hidden;
@@ -115,7 +142,7 @@ nav a {
   line-height: 70px;
   padding: 0 30px;
   font-weight: bold;
-  color: #003559;
+  color: #008000;
   text-transform: uppercase;
 }
 .down:after {
@@ -131,7 +158,7 @@ nav a {
   left: 0;
   visibility: hidden;
   opacity: 0;
-  z-index: 5;
+  transition: .4s ease-in-out;
   width: 150px;
   transform: perspective(600px) rotateX(-90deg);
   transform-origin: 0% 0%;
@@ -151,91 +178,5 @@ transition: .6s ease-in-out;
   font-family: 'Kurale', serif;
 }
 
-/* скрываем чекбокс */
-#menu__toggle {
-  opacity: 0;
-}
-/* стилизуем кнопку */
-.menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 1;
-}
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-
-/* контейнер меню */
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  text-align: center;
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-}
-/* элементы меню */
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
-}
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
-}
->>>>>>> 9f639946d21a01a4004646037db1814221cea423
+#data {
+  text-align: right;
