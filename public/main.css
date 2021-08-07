@@ -27,7 +27,13 @@ a {
       border: 5px solid green; /* Параметры рамки */
       box-shadow: 0 0 7px #666; /* Параметры тени */
      }
-
+.ost_month_results{
+font-size: 30px;
+}
+.sprava {
+  text-align:right;
+  padding-top: 0px;
+}
 .leftimg {
     float:left;
     margin: 12px 12px 12px 0;
@@ -40,6 +46,7 @@ a {
 li {
 float: center;
 margin-left:20px;
+
 }
 .menu {
 max-width: 1920px;
