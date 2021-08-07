@@ -7,14 +7,17 @@ p {
   padding-left: 30px;
 }
 h1 {
-  text-align: center}
-h2  {
   text-align: center;
 
+}
+h2  {
+  text-align: center;
   padding-bottom: 1px;
+  padding-top: 0px;
 }
 h3  {
   padding-left: 30px;
+  padding-top: 0px;
 }
 a {
   color: green;
@@ -57,7 +60,7 @@ body {
 }
 
 .header {
-    padding: 40px;
+    padding: 0px;
     font-size: 40px;
     text-align: center;
     background: white;
@@ -89,10 +92,10 @@ table {
     color: blue;
    }
 
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+   .fakeimg {
+       background-color: #aaa;
+       width: 100%;
+       padding: 20px;
 }
 
 /* Add a card effect for articles */
@@ -151,19 +154,21 @@ nav a {
   font-family: FontAwesome;
 }
 .topmenu li a:hover { color: #E6855F; }
+
 .submenu {
   background: white;
   border: 2px solid #003559;
   position: absolute;
   left: 0;
   visibility: hidden;
-  opacity: 0;
+opacity: 0;
   transition: .4s ease-in-out;
   width: 150px;
   transform: perspective(600px) rotateX(-90deg);
   transform-origin: 0% 0%;
 transition: .6s ease-in-out;
 }
+
 .topmenu > li:hover .submenu{
   visibility: visible;
   opacity: 1;
