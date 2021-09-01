@@ -8,6 +8,8 @@ p {
 }
 h1 {
   text-align: center;
+  font-family: Georgia;
+  letter-spacing: 3px;
 
 }
 h2  {
@@ -22,6 +24,9 @@ h3  {
 a {
   color: green;
 }
+
+img {max-width: 100%;}
+
 .round {
       border-radius: 100px; /* Радиус скругления */
       border: 5px solid green; /* Параметры рамки */
@@ -46,6 +51,7 @@ font-size: 30px;
 li {
 float: center;
 margin-left:20px;
+font-weight: bold;
 
 }
 .menu {
