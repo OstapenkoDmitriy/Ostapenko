@@ -12,12 +12,14 @@ if ($conn->connect_error) {
 }
 
 $sql = "INSERT INTO invite_to_speeach (name, organization, email, message, amount, date_of_create, id)
-VALUES ('John', 'Doe', 'john@example.com', 'Doe', 123, '2021-09-01', 0)";
+VALUES (htmlspecialchars($_POST["user_name"]), htmlspecialchars($_POST["name_org"]),
+ htmlspecialchars($_POST["user_mail"]), htmlspecialchars($_POST["user_message"]), htmlspecialchars($_POST["amount"]),
+date('Y-m-d'), 0)";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  echo "Спасибо за приглашение";
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  echo "ошибка"; //$sql . "<br>" . $conn->error;
 }
 
 $conn->close();
