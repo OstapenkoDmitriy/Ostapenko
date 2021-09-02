@@ -1,4 +1,11 @@
 
+html {
+  scroll-behavior: smooth;
+ }
+ a {
+   color: green;
+  }
+
 p {
   font-size: 25px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -20,12 +27,13 @@ h2  {
 h3  {
   padding-left: 30px;
   padding-top: 0px;
-}
-a {
-  color: green;
+  text-align: center;
+  word-spacing: 7px;
+
 }
 
 img {max-width: 100%;}
+
 
 .round {
       border-radius: 100px; /* Радиус скругления */
@@ -99,13 +107,13 @@ table {
     color: white; /* Цвет текста */
     border-spacing: 2px; /* Расстояние между ячейками */
    }
-   td, th {
+td, th {
     background: #DBEBCE;
     padding: 5px;
     color: blue;
    }
 
-   .fakeimg {
+.fakeimg {
        background-color: #aaa;
        width: 100%;
        padding: 20px;
