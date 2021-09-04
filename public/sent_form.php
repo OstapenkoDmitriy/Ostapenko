@@ -16,13 +16,14 @@ $user_mail = htmlspecialchars($_POST["user_mail"]);
 $user_message = htmlspecialchars($_POST["user_message"]);
 $amount = htmlspecialchars($_POST["amount"]);
 $sql = "INSERT INTO invite_to_speeach (name, organization, email, message, amount, date_of_create, id)
+$result = $conn->query($sql);
 VALUES ($name, $name_org, $user_mail, $user_message, $amount,
 date('Y-m-d'), 0)";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Спасибо за приглашение";
+if (!$result) {
+  echo "ошибка";
 } else {
-  echo "ошибка"; //$sql . "<br>" . $conn->error;
+  echo "Спасибо за приглашение"; //$sql . "<br>" . $conn->error;
 }
 
 $conn->close();
