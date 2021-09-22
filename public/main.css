@@ -172,6 +172,7 @@ nav a {
   color: #008000;
   text-transform: uppercase;
 }
+}
 @media (max-width:400px)
 {
 .topmenu {margin: 0 auto;
@@ -186,6 +187,15 @@ h3 {
   padding: 0;
   margin: 0;
 }
+p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+li {
+  font-size: 20px;
+
+}
 img {
   display: block; width: 100%;height: auto;
 }
@@ -193,6 +203,39 @@ img {
     line-height: 50px;
 }
 }
+
+@media (max-width:800px)
+{
+.topmenu {margin: 0 auto;
+color:red !important;}
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+h3 {
+  font-size: 25px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+p {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+li {
+  font-size: 24px;
+
+}
+img {
+  display: block; width: 100%;height: auto;
+}
+.mybio {
+    line-height: 50px;
+}
+}
+
+
 
 
 .down:after {
