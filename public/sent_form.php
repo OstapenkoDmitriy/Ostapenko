@@ -10,6 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+$conn->set_charset("utf8mb4");
 $name = htmlspecialchars($_POST["user_name"]);
 $name_org = htmlspecialchars($_POST["name_org"]);
 $user_mail = htmlspecialchars($_POST["user_mail"]);
